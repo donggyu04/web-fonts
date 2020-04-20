@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Font sample</title>
+</head>
+<style type="text/css">
+    .times-new-roman {
+        font-family: "Times New Roman", serif;
+    }
+
+    .times {
+        font-family: Times, serif;
+    }
+
+    .serif {
+        font-family: serif;
+    }
+
+    .nanum-gothic {
+        font-family: "Nanum Gothic", serif;
+    }
+
+    @font-face {
+        font-family: "Nanum Gothic";
+        src: local("Nanum Gothic"),
+            url("/fonts/NanumGothic.woff") format("woff");
+    }
+</style>
+<body>
+    <h1>Default</h1>
+    <h1 class="serif">Serif</h1>
+    <h1 class="times-new-roman">Times New Roman</h1>
+    <h1 class="times">Times</h1>
+    <h1 class="nanum-gothic">Nanum Gothic</h1>
+</body>
+</html>
