@@ -1,36 +1,36 @@
 <!DOCTYPE html>
-<head>
-    <meta charset="UTF-8">
-    <title>Font sample</title>
-</head>
-<style type="text/css">
-    .times-new-roman {
-        font-family: "Times New Roman", serif;
-    }
+    <head>
+        <meta charset="UTF-8">
+        <title>Font sample</title>
+    </head>
+    <style type="text/css">
+        .times-new-roman {
+            font-family: "Times New Roman", serif;
+        }
 
-    .times {
-        font-family: Times, serif;
-    }
+        .times {
+            font-family: Times, serif;
+        }
 
-    .serif {
-        font-family: serif;
-    }
+        .serif {
+            font-family: serif;
+        }
 
-    .nanum-gothic {
-        font-family: "Nanum Gothic", serif;
-    }
+        .nanum-gothic {
+            font-family: "Nanum Gothic", serif;
+        }
 
-    @font-face {
-        font-family: "Nanum Gothic";
-        src: local("Nanum Gothic"),
-            url("/fonts/NanumGothic.woff") format("woff");
-    }
-</style>
-<body>
-    <h1>Default</h1>
-    <h1 class="serif">Serif</h1>
-    <h1 class="times-new-roman">Times New Roman</h1>
-    <h1 class="times">Times</h1>
-    <h1 class="nanum-gothic">Nanum Gothic</h1>
-</body>
+        @font-face {
+            font-family: "Nanum Gothic";
+            src: url("/fonts/NanumGothic.woff") format("woff"),
+                 url('/fonts/NanumGothic.eot') format('embedded-opentype');
+        }
+    </style>
+    <body>
+        <h1>Default, 디폴트</h1>
+        <h1 class="serif">Serif, 세프</h1>
+        <h1 class="times-new-roman">Times New Roman, 타임 뉴 로만</h1>
+        <h1 class="times">Times, 타임</h1>
+        <h1 class="nanum-gothic">Nanum Gothic, 나눔고딕</h1>
+    </body>
 </html>
